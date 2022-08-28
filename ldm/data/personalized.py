@@ -116,7 +116,7 @@ class PersonalizedBase(Dataset):
         self.interpolation = {"linear": PIL.Image.Resampling.LINEAR,
                               "bilinear": PIL.Image.Resampling.BILINEAR,
                               "bicubic": PIL.Image.Resampling.BICUBIC,
-                              "lanczos": PIL.Image.Resampling.ANCZOS,
+                              "lanczos": PIL.Image.Resampling.LANCZOS,
                               }[interpolation]
         self.flip = transforms.RandomHorizontalFlip(p=flip_p)
 
